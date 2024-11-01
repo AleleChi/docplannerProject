@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doc Planner CSS Web Project</title>
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./res/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./res/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./res/favicon-16x16.png">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body class="deferred">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./res/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./res/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./res/favicon-16x16.png"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="deferred">
     <nav class="main-header">
-        <div class="section_inner">
-            <h1 class="logo-left">
-                <a href="/">
-                    <img class="logo-docplanner" src="./res/logo.svg" alt="Logo Docplanner" />
-                </a>
-            </h1>
-          <button type="button" class="hamburger">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <nav class="main-nav">
-            <ul class="main-menu">
-                <li><a href="/" class="is-current">About us</a></li>
-                <li><a href="/career">Career</a></li>
-                <li class="dropdown">
-                    <a>
-                        Departments <br />
-                    </a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>Marketing &amp; PR</li>
-                            <li>Customer Success & Sales</li>
-                            <li>IT, Product, Data</li>
-                            <li>Finance &amp; Administration</li>
-                            <li>HR &amp; more</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="section_inner">
+        <h1 class="logo-left">
+          <a href="/">
+            <img
+              class="logo-docplanner"
+              src="./res/logo.svg"
+              alt="Logo Docplanner"
+            />
+          </a>
+        </h1>
+        <button type="button" class="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-menu">
+            <li><a href="/" class="is-current">About us</a></li>
+            <li><a href="/career">Career</a></li>
+            <li class="dropdown">
+              <a>Departments</a>
+              <div class="dropdown-content">
+                <ul>
+                  <li>Marketing &amp; PR</li>
+                  <li>Customer Success & Sales</li>
+                  <li>IT, Product, Data</li>
+                  <li>Finance &amp; Administration</li>
+                  <li>HR &amp; more</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </nav>
-    
-</body>
+    <main>
+      <section class="synet-section">
+        <img class="center-logo" src="./res/sygnet.png" alt="Sygnet" />
+        <h1>Making the healthcare experience more human</h1>
+        <div class="grid">
+          <div class="grid-1">
+            <p>
+              We want patients to find the perfect doctor and book an appointment in the easiest way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.
+            </p>
+          </div>
+          <div class="grid-2">
+            <p>
+              We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services inner-section">
+        <div class="grid fade-elements">
+            <div class="col-3">
+                <div class="intem-services">
+                    <img src="./res/patients.png" alt="patient icon">
+                    <h1> For Patients</h1>
+                    <h2>Find a doctor, book a visit and solve any health-related doubt</h2>
+                </div>
+                <div class="country-select">
+                    <select name="country" id="change-domain">
+                        <option value="">Choose Country</option>
+                        <option value="">Nigeria</option>
+                        <option value="">Cameroon</option>
+                        <option value="">Gabon</option>
+                        <option value="">Kenya</option>
+                        <option value="">Ghana</option>
+                        <option value="">Ethiopia</option>
+                        <option value="">South Africa</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
